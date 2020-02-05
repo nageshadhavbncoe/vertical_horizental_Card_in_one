@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hap_agency_screen/login.dart';
 import 'package:hap_agency_screen/practice_ui.dart';
-import 'package:hap_agency_screen/screen_2.dart';
-import 'package:hap_agency_screen/screen_one.dart';
+
+import 'package:hap_agency_screen/something/after_front.dart';
+import 'package:hap_agency_screen/something/backscreen.dart';
+import 'package:hap_agency_screen/something/front_screen.dart';
+
+import 'practice_ui.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,6 +22,13 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: Something(),
+      routes: <String, WidgetBuilder> {
+    '/something': (BuildContext context) =>  Something(),
+    '/backscreen' : (BuildContext context) =>  BackScreen(),
+    '/frontscreen' : (BuildContext context) =>  FrontScreen(),
+    '/afterfront' : (BuildContext context) =>  AfterFront(),
+    '/login':(BuildContext context)=>Login(),
+  },
       //Registar(), 
       //StudentList(),
     );
