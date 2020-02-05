@@ -57,6 +57,9 @@ borderRadius:BorderRadius.circular(15)
         ) 
       ),
       Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
         child:Container(
           height: 200,
           width: 400,
@@ -64,6 +67,9 @@ borderRadius:BorderRadius.circular(15)
         )
       ),
       Card(
+        shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15)
+        ),
         child:Container(
           height: 200,
           width: 400,
@@ -71,6 +77,9 @@ borderRadius:BorderRadius.circular(15)
         )
       ),
       Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+        ),
         child: Container(
           height: 200,
           width: 400,
@@ -78,6 +87,9 @@ borderRadius:BorderRadius.circular(15)
         )
       ),
       Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15)
+        ),
         child: Container(
         
           height: 200,
