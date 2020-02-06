@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hap_agency_screen/forgetpassword.dart';
 import 'package:hap_agency_screen/login.dart';
 import 'package:hap_agency_screen/practice_ui.dart';
 
@@ -21,13 +22,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: Something(),
+      home:Login(), 
+      //Something(),
       routes: <String, WidgetBuilder> {
     '/something': (BuildContext context) =>  Something(),
     '/backscreen' : (BuildContext context) =>  BackScreen(),
     '/frontscreen' : (BuildContext context) =>  FrontScreen(),
     '/afterfront' : (BuildContext context) =>  AfterFront(),
     '/login':(BuildContext context)=>Login(),
+    '/forgetpassword':(BuildContext context)=>ForgetPassword(),
   },
       //Registar(), 
       //StudentList(),

@@ -63,12 +63,30 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                   ),
-                  MaterialButton(
-                    shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: MaterialButton(
+                        color: Colors.cyan,
+                        shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)
+                        ),
+                        child: Text("submit"),
+                        onPressed:(){
+                            Navigator.of(context).pushNamed('/something');
+                        }),
                     ),
-                    child: Text("submit"),
-                    onPressed:(){})
+                  ),
+                  Material(
+                    child: InkWell(
+                                          child: Text("Forget password",style:TextStyle(
+                        color: Colors.blue
+                      )),
+                      onTap: (){
+                          Navigator.of(context).pushNamed('/forgetpassword');
+                      },
+                    ),
+                  )
                   
                          ],
                        ),
